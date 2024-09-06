@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+}
+
+.col {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+form {
+  margin-bottom: 1rem;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+
+.card-header {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-body {
+  margin-bottom: 0.5rem;
+}
+
+.card-footer {
+  text-align: right;
+}
+
+.alert {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.alert-error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+:root {
+  --primary-color: #007bff; /* Cor principal */
+  --secondary-color: #6c757d; /* Cor secundária */
+  --success-color: #28a745; /* Cor de sucesso */
+  --error-color: #dc3545; /* Cor de erro */
+  --warning-color: #ffc107; /* Cor de aviso */
+  --info-color: #17a2b8; /* Cor de informação */
+  --background-color: #f8f9fa; /* Cor de fundo */
+  --text-color: #343a40; /* Cor do texto */
+  --border-color: #dee2e6; /* Cor da borda */
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.25rem;
+  background-color: #fff;
+  color: var(--text-color);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.root {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
